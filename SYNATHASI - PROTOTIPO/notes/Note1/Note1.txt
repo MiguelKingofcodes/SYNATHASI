@@ -1,0 +1,5 @@
+OBJETIVOS: 
+	1. Movimentação e Física...
+		1a. Chão - Pulo, Andar para Frente/Trás
+		1b. Correr - Dash
+	2. Magias e Inimigos
