@@ -17,9 +17,8 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Sprite1","order":16,"path":"sprites/Sprite1/Sprite1.yy",},
-    {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
-    {"name":"Sprite3","order":17,"path":"sprites/Sprite3/Sprite3.yy",},
-    {"name":"Sprite4","order":18,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"obj_Colisao","order":2,"path":"objects/obj_Colisao/obj_Colisao.yy",},
+    {"name":"obj_Player","order":1,"path":"objects/obj_Player/obj_Player.yy",},
+    {"name":"spr_Player","order":1,"path":"sprites/spr_Player/spr_Player.yy",},
   ],
 }

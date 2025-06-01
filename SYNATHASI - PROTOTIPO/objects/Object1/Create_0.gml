@@ -1,1 +1,0 @@
-coin = random(4)
