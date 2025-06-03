@@ -3,15 +3,18 @@ event_inherited();
 
 
 
-velocidade = 10 // Velocidade do PLAYER
+velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
-forca_pulo = -10; // Força de pulo do PLAYER
+forca_pulo = -9; // Força de pulo do PLAYER
 
 function input_player(){
-	var _left, _right, _jump
-
+	var _left, _right, _jump, _running
+	
 	_left = keyboard_check(ord("A"));
 	_right = keyboard_check(ord("D"));
+	
+	_running = keyboard_check(vk_shift);
+	
 	_jump = keyboard_check(vk_space);
 	
 	
@@ -26,6 +29,7 @@ function input_player(){
 			velV = forca_pulo;
 		
 		}
+		
 	
 	}else{
 	
