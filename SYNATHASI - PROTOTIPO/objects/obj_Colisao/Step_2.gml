@@ -7,8 +7,9 @@ _colY = instance_place(x, y+velV, obj_Bloco);
 
 // Horizontal
 if (_colX){ 
-
-	/*// Esquerda
+	
+	/*
+	// Esquerda
 	if(velH < 0){
 	
 		x = _colX.bbox_left + (x - bbox_right);

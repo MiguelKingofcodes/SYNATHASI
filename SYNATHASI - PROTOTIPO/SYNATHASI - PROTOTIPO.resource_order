@@ -24,6 +24,11 @@
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"Room3","order":2,"path":"rooms/Room3/Room3.yy",},
     {"name":"spr_Player","order":1,"path":"sprites/spr_Player/spr_Player.yy",},
-    {"name":"Sprite3","order":16,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"spr_PlayerJump","order":5,"path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},
+    {"name":"spr_PLayerParado","order":3,"path":"sprites/spr_PLayerParado/spr_PLayerParado.yy",},
+    {"name":"spr_Teste","order":4,"path":"sprites/spr_Teste/spr_Teste.yy",},
+    {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"Sprite7","order":6,"path":"sprites/Sprite7/Sprite7.yy",},
+    {"name":"Sprite8","order":7,"path":"sprites/Sprite8/Sprite8.yy",},
   ],
 }

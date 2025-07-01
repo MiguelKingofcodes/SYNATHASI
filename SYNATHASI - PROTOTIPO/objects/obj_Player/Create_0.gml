@@ -20,20 +20,55 @@ function input_player(){
 	
 	velH = (_right - _left)*velocidade;
 	
-	var no_chao = place_meeting(x, y+1, obj_Bloco);
+	var no_chao = place_meeting(x, y+velV, obj_Bloco);
 	
 	if (no_chao){
 	
 		if (_jump){
 		
 			velV = forca_pulo;
+			sprite_index = Sprite7;
+			
 		
 		}
+		
+		if(velH == 0){
+		
+			sprite_index = spr_PLayerParado; 
+				
+		
+		}else{
+			
+			if(_left){
+				image_xscale = -1
+			}
+			if(_right){
+				image_xscale = 1
+			}
+			
+			sprite_index = spr_Player;
+				
+			
+		}
+		
+
+		if(velV < 0){
+			
+			sprite_index = Sprite7;
+		
+		}
+		
 		
 	
 	}else{
 	
 		velV += gravidade;
+			if(_left){
+				image_xscale = -1
+			}
+			if(_right){
+				image_xscale = 1
+			}
 		
 	}
 

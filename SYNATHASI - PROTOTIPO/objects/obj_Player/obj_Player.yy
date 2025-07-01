@@ -37,6 +37,9 @@
     "name":"spr_Player",
     "path":"sprites/spr_Player/spr_Player.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_PLayerParado",
+    "path":"sprites/spr_PLayerParado/spr_PLayerParado.yy",
+  },
   "visible":true,
 }
