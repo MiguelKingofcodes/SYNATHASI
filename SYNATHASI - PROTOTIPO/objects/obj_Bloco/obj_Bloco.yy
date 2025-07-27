@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Bloco",
-    "path":"sprites/spr_Bloco/spr_Bloco.yy",
+    "name":"spr_Grama",
+    "path":"sprites/spr_Grama/spr_Grama.yy",
   },
   "spriteMaskId":null,
   "visible":true,

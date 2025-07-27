@@ -16,7 +16,7 @@
     "name":"obj_Colisao",
     "path":"objects/obj_Colisao/obj_Colisao.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
