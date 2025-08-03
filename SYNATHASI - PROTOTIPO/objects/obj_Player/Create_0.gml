@@ -111,7 +111,6 @@ function input_player(){
 	}
 	
 	
-	
 }
 
 	

@@ -6,7 +6,7 @@ var _texto = string_copy(text_to_show, 0, indice);
 
 // Desenhando a caixa
 draw_set_color(box_color);
-draw_sprite(spr_Texto, 0, box_x, box_y);
+draw_sprite(spr_Texto1, 0, box_x, box_y);
 
 
 // Destenhando texto com a cor do texto
