@@ -1,22 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Player",
+  "%Name":"obj_Interativo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Player",
+  "name":"obj_Interativo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_Colisao",
-    "path":"objects/obj_Colisao/obj_Colisao.yy",
+    "name":"obj_ChangeRoomInteract",
+    "path":"objects/obj_ChangeRoomInteract/obj_ChangeRoomInteract.yy",
   },
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -34,12 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_PlayerJump",
-    "path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",
+    "name":"spr_ObjetoInterativo",
+    "path":"sprites/spr_ObjetoInterativo/spr_ObjetoInterativo.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_PLayerParado",
-    "path":"sprites/spr_PLayerParado/spr_PLayerParado.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

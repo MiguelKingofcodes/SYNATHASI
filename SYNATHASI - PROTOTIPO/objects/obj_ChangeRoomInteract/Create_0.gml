@@ -6,4 +6,5 @@ yy = 0; // Valor Y do player
 
 // Texto á ser mostrado...
 myTextBox = noone;
+myText = ["Testando Objeto Interativo"]
 

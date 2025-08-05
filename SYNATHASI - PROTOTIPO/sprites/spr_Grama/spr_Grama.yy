@@ -19,7 +19,8 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1b92860f-26d8-4ebf-a48e-40bd17530689","blendMode":0,"displayName":"default","isLocked":false,"name":"1b92860f-26d8-4ebf-a48e-40bd17530689","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"181a69a5-f1ca-4604-a984-4aa3a8ada155","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"181a69a5-f1ca-4604-a984-4aa3a8ada155","opacity":0.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1b92860f-26d8-4ebf-a48e-40bd17530689","blendMode":0,"displayName":"default","isLocked":false,"name":"1b92860f-26d8-4ebf-a48e-40bd17530689","opacity":10.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Grama",
   "nineSlice":null,
