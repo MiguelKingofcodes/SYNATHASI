@@ -1,7 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-
+// Inventário e outras mecânicas...
+PlayerInventory = []
 
 velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
@@ -30,7 +31,7 @@ function input_player(){
 	
 	_jump = keyboard_check(vk_space);
 	
-	
+	_inventory = keyboard_check(vk_tab);
 	
 	
 	velH = (_right - _left)*velocidade;
@@ -109,6 +110,8 @@ function input_player(){
 			}
 		
 	}
+	
+
 	
 	
 }
