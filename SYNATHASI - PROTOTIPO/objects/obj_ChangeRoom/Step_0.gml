@@ -14,5 +14,7 @@ if (_colPlayer){
 	room_goto(destino);
 	obj_Player.x = xx;
 	obj_Player.y = yy;
+	obj_Npc.x = xx;
+	
 	
 }
