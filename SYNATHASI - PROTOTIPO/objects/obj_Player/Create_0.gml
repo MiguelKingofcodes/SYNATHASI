@@ -3,6 +3,7 @@ event_inherited();
 
 // Inventário e outras mecânicas...
 PlayerInventory = []
+InDialog = false;
 
 velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
