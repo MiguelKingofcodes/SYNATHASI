@@ -15,12 +15,39 @@ if(obj_Player.x >= x && !_colPlayerPositive){
 	//sprite_index = spr_Player;
 	image_xscale = -1;
 	
-}else if (obj_Player.x == x){
-
-	//sprite_index = spr_PLayerParado;
+}else if(!obj_Player.InDialog){
+	
+		obj_Player.InDialog = !obj_Player.InDialog;
+		if (keyboard_check(ord("E"))){	
+			if (myTextBox == noone){
+					myTextBox = instance_create_layer(x - 150, y-150, "Text_and_interactions", obj_TextBox)
+					myTextBox.texto_ = npcText;
+			}
+		
+			if(keyInteraction){
+		
+				if(keyboard_check(ord("Y"))){
+			
+					obj_Player.PlayerInventory = "Rosa das Damas Eldred";
+				
+				}
+		
+			}
+		
+		}
+	
+	}else{
+	if(myTextBox != noone){
+		instance_destroy(myTextBox);
+		obj_Player.InDialog = !obj_Player.InDialog;
+		myTextBox = noone;
+	}
+}
+	
+/*	//sprite_index = spr_PLayerParado;
 
 }else{
 
 	//sprite_index = spr_PLayerParado;
 
-}
+}*/
