@@ -1,6 +1,18 @@
 // Inherit the parent event
 event_inherited();
 
+<<<<<<< Updated upstream
+=======
+// Atributos Personalizados...
+seeingMessage = true;
+
+// Inventário e outras mecânicas...
+PlayerInventory = [];
+PlayerParty = [];
+
+
+
+>>>>>>> Stashed changes
 
 
 velocidade = 5 // Velocidade do PLAYER
