@@ -1,14 +1,16 @@
 var _colPlayer = instance_place(x+1, y, obj_Player);
 
+
+
 if (_colPlayer){
 	// Checa se já há um texto sendo mostrado...
 	var inDialog = obj_Player.InDialog;
-	if(!inDialog){
+	//if(!inDialog){
 	
 		obj_Player.InDialog = !inDialog;
 		if (keyboard_check(ord("E"))){	
 			if (myTextBox == noone){
-					myTextBox = instance_create_layer(x - 150, y-150, "Text_and_interactions", obj_TextBox)
+					myTextBox = instance_create_layer(10, 15, "Text_and_interactions", obj_TextBox)
 					myTextBox.texto_ = npcText;
 			}
 		
@@ -23,15 +25,10 @@ if (_colPlayer){
 			}
 		
 		}
-	
-	}
-	
-}else{
-	if(myTextBox != noone){
+} else if (myTextBox != noone){
 		instance_destroy(myTextBox);
 		obj_Player.InDialog = false;
 		myTextBox = noone;
-	}
 }
 
 

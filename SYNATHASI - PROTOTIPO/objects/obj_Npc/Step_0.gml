@@ -15,12 +15,12 @@ if(obj_Player.x >= x && !_colPlayerPositive){
 	//sprite_index = spr_Player;
 	image_xscale = -1;
 	
-}else if(!obj_Player.InDialog){
+}else if(instance_place(x-5, y, obj_Player) || instance_place(x+5, y, obj_Player)){
 	
 		obj_Player.InDialog = !obj_Player.InDialog;
 		if (keyboard_check(ord("E"))){	
 			if (myTextBox == noone){
-					myTextBox = instance_create_layer(x - 150, y-150, "Text_and_interactions", obj_TextBox)
+					myTextBox = instance_create_layer(10, 15, "Text_and_interactions", obj_TextBox)
 					myTextBox.texto_ = npcText;
 			}
 		
