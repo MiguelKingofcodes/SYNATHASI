@@ -9,7 +9,7 @@ velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
 forca_pulo = -9; // Força de pulo do PLAYER
 
-stamina = 20
+stamina = 50
 
 function input_player(){
 	
@@ -54,20 +54,34 @@ function input_player(){
 		
 		}
 		
-		if(_running && (stamina > 1)){
-			velocidade = 10
-			stamina -= 1
+		if(_running && (stamina >= 1)){
+			velocidade = 20
+			if(velH != 0){
+			
+				stamina -= 1
+			
+			}
+			
 		
 		}else{
 			
-			if (stamina < 20){
+			if (stamina < 50 && !_running){
 			
 				stamina += 1
 			
 			}
 			
-			velocidade = 5
-			sprite_duplicate(spr_Player)
+			if(stamina < 5){
+			
+				velocidade = 3
+			
+			}else{
+			
+				velocidade = 5
+			
+			}
+			
+			
 		
 		}
 		

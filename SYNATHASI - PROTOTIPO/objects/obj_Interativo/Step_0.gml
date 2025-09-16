@@ -10,7 +10,7 @@ if (_colPlayer){
 		obj_Player.InDialog = !inDialog;
 		if (keyboard_check(ord("E"))){	
 			if (myTextBox == noone){
-					myTextBox = instance_create_layer(10, 15, "Text_and_interactions", obj_TextBox)
+					myTextBox = instance_create_layer(10, 90, "Text_and_interactions", obj_TextBox)
 					myTextBox.texto_ = npcText;
 			}
 		
