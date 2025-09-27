@@ -7,6 +7,7 @@ event_inherited();
 seeingMessage = true;
 
 // Inventário e outras mecânicas...
+<<<<<<< Updated upstream
 PlayerInventory = [];
 PlayerParty = [];
 
@@ -14,6 +15,12 @@ PlayerParty = [];
 
 >>>>>>> Stashed changes
 
+=======
+PlayerInventory = []
+myInventoryBox = noone;
+
+InDialog = false;
+>>>>>>> Stashed changes
 
 velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
@@ -28,6 +35,8 @@ function input_player(){
 		Esquerda - A
 		Direita - D
 		Interação - E
+		
+		Inventário - Tab
 	
 	*/
 	
@@ -42,7 +51,29 @@ function input_player(){
 	
 	_jump = keyboard_check(vk_space);
 	
+<<<<<<< Updated upstream
 	
+=======
+	_tab = keyboard_check(vk_tab);
+	_tabDijuntor = false;
+	_inventory = false;
+	
+	
+	if(_tab){
+	
+		_tabDijuntor = true;
+	
+	}
+	
+	
+	if(_tabDijuntor){
+		
+		_inventory = !_inventory;
+	
+	}
+	
+
+>>>>>>> Stashed changes
 	
 	
 	velH = (_right - _left)*velocidade;
@@ -52,6 +83,32 @@ function input_player(){
 	var interactive_object = place_meeting(x, y, obj_ChangeRoomInteract);
 	
 	// Se o player está no chão
+	
+	if(_inventory){
+	
+			if (myInventoryBox == noone){
+					myInventoryBox = instance_create_layer(10, 15, "Player", obj_Inventory)
+					//myTextBox.texto_ = npcText;
+			}
+		
+			/*if(keyInteraction){
+		
+				if(keyboard_check(ord("Y"))){
+			
+					obj_Player.PlayerInventory = "Rosa das Damas Eldred";
+				
+				}
+		
+			}*/
+		
+} else if (myInventoryBox != noone){
+		instance_destroy(myInventoryBox);
+		//obj_Player.InDialog = false;
+		myInventoryBox = noone;
+}
+	
+	
+	
 	if (no_chao){
 		
 		// Se o player apertar "Pulo"

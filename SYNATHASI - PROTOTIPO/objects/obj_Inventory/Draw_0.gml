@@ -5,5 +5,5 @@ draw_sprite(spr_TextoTeste, 0, x, y);
 //Desenha Texto
 draw_set_font(txtFont);
 draw_set_color(txtColor);
-draw_text_ext(x+15, y+10, texto_[page], stringHeight, boxWidth);
+draw_text_ext(x+15, y+10, playerInventory, stringHeight, boxWidth);
 

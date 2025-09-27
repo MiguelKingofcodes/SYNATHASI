@@ -9,10 +9,19 @@ var _colPlayer = instance_place(x+1, y, obj_Player);
 // O Player vai sempre passar para a próxima "Room" na mesma altura que estava na anterior...
 if (_colPlayer){
 	
+<<<<<<< Updated upstream
 			// Checa se já há um texto sendo mostrado...
 		if (myTextBox == noone){
 				myTextBox = instance_create_layer(x-100, y-220, "Text_and_interactions", obj_TextBox)
 				myTextBox.texto_[0] = "Vila da Margem Celestial"
+=======
+		// Checa se já há um texto sendo mostrado...
+		if (keyboard_check(ord("E"))){
+			if (myTextBox == noone){
+				myTextBox = instance_create_layer(10, 15, "Text_and_interactions", obj_TextBox)
+				myTextBox.texto_ = myText;
+			}
+>>>>>>> Stashed changes
 		}
 		if (keyboard_check(ord("E"))){	
 			room_goto(destino);

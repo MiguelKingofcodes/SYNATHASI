@@ -47,6 +47,12 @@
     {"id":{"name":"obj_ChangeRoom","path":"objects/obj_ChangeRoom/obj_ChangeRoom.yy",},},
     {"id":{"name":"obj_ChangeRoomInteract","path":"objects/obj_ChangeRoomInteract/obj_ChangeRoomInteract.yy",},},
     {"id":{"name":"obj_Colisao","path":"objects/obj_Colisao/obj_Colisao.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"obj_Interativo","path":"objects/obj_Interativo/obj_Interativo.yy",},},
+    {"id":{"name":"obj_Inventory","path":"objects/obj_Inventory/obj_Inventory.yy",},},
+    {"id":{"name":"obj_Npc","path":"objects/obj_Npc/obj_Npc.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"obj_PlayerText","path":"objects/obj_PlayerText/obj_PlayerText.yy",},},
     {"id":{"name":"obj_TestNpc","path":"objects/obj_TestNpc/obj_TestNpc.yy",},},
@@ -63,7 +69,12 @@
     {"id":{"name":"spr_Floresta3","path":"sprites/spr_Floresta3/spr_Floresta3.yy",},},
     {"id":{"name":"spr_Grama","path":"sprites/spr_Grama/spr_Grama.yy",},},
     {"id":{"name":"spr_InteractiveObject","path":"sprites/spr_InteractiveObject/spr_InteractiveObject.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"spr_Npc","path":"sprites/spr_Npc/spr_Npc.yy",},},
+=======
+    {"id":{"name":"spr_InventoryTeste","path":"sprites/spr_InventoryTeste/spr_InventoryTeste.yy",},},
+    {"id":{"name":"spr_ObjetoInterativo","path":"sprites/spr_ObjetoInterativo/spr_ObjetoInterativo.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},},
     {"id":{"name":"spr_PlayerJump","path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},},
     {"id":{"name":"spr_PLayerParado","path":"sprites/spr_PLayerParado/spr_PLayerParado.yy",},},

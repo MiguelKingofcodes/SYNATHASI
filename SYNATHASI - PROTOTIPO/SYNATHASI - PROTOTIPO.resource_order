@@ -26,6 +26,12 @@
     {"name":"obj_ChangeRoom","order":3,"path":"objects/obj_ChangeRoom/obj_ChangeRoom.yy",},
     {"name":"obj_ChangeRoomInteract","order":4,"path":"objects/obj_ChangeRoomInteract/obj_ChangeRoomInteract.yy",},
     {"name":"obj_Colisao","order":2,"path":"objects/obj_Colisao/obj_Colisao.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"obj_Interativo","order":7,"path":"objects/obj_Interativo/obj_Interativo.yy",},
+    {"name":"obj_Inventory","order":9,"path":"objects/obj_Inventory/obj_Inventory.yy",},
+    {"name":"obj_Npc","order":8,"path":"objects/obj_Npc/obj_Npc.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_Player","order":1,"path":"objects/obj_Player/obj_Player.yy",},
     {"name":"obj_PlayerText","order":5,"path":"objects/obj_PlayerText/obj_PlayerText.yy",},
     {"name":"obj_TestNpc","order":7,"path":"objects/obj_TestNpc/obj_TestNpc.yy",},
@@ -39,7 +45,12 @@
     {"name":"spr_Floresta2","order":2,"path":"sprites/spr_Floresta2/spr_Floresta2.yy",},
     {"name":"spr_Floresta3","order":3,"path":"sprites/spr_Floresta3/spr_Floresta3.yy",},
     {"name":"spr_InteractiveObject","order":1,"path":"sprites/spr_InteractiveObject/spr_InteractiveObject.yy",},
+<<<<<<< Updated upstream
     {"name":"spr_Npc","order":5,"path":"sprites/spr_Npc/spr_Npc.yy",},
+=======
+    {"name":"spr_InventoryTeste","order":6,"path":"sprites/spr_InventoryTeste/spr_InventoryTeste.yy",},
+    {"name":"spr_ObjetoInterativo","order":5,"path":"sprites/spr_ObjetoInterativo/spr_ObjetoInterativo.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_PlayerJump","order":1,"path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},
     {"name":"spr_PLayerParado","order":2,"path":"sprites/spr_PLayerParado/spr_PLayerParado.yy",},
     {"name":"spr_Texto1","order":3,"path":"sprites/spr_Texto1/spr_Texto1.yy",},
