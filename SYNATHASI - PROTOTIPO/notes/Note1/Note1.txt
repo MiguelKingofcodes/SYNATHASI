@@ -1,9 +1,0 @@
-OBJETIVOS: 
-	1. Movimentação e Física...
-		1a. Chão - Pulo, Andar para Frente/Trás
-		1b. Correr - Dash
-	2. Ataque e Inimigos
-	
-	
---# Vídeos utilizados como base #--
-https://www.youtube.com/watch?v=uSoe4htQbTE&list=PLXtTHO_ONuXFMHe5uujI0Ne9gDRr8jlRb
