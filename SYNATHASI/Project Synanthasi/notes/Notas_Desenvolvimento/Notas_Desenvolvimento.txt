@@ -1,0 +1,44 @@
+DOCUMENTAÇÃO DO PROJETO POR MIGUEL CAMPOS
+
+ORGANIZAÇÃO DO DESENVOLVIMENTO DO JOGO:
+
+
+( SALAS PRINCIPAIS )
+	Descrição:
+		> Salas principais, onde o personagem vai: Se [ MOVIMENTAR ], 
+		interagir de forma mais superficial com outros personagens (NPC's)
+		através de [ DIÁLOGOS SIMPLES ] entre outros objetos, realizar o [ COMBATE ]  
+		e mais...
+
+	Possuem:
+		> PLayer
+		> NPC's
+		> Objetos Interativos
+			> Podem levar para "Salas de Discução"
+			> Transitar entre salas
+			
+( SALAS DE DISCUÇÃO )
+	Descrição:
+		> Salas de Discução entre personagens chaves da história do jogo
+		onde haverá aprofundamento da história e [ DIÁLOGOS MÚLTIPLA ESCOLHA ].
+
+	Possuem:
+		> Splash art do personagem principal
+		> [ DIÁLOGOS DE MÚLTIPLA ESCOLHA ]
+		
+		
+		
+=============***=============
+
+[ COLISÃO ]
+
+
+[ MOVIMENTAÇÃO ]
+	
+	Teclas selecionadas para movimentação BÁSICA:
+		UP -> W
+		DOWN -> S
+		LEFT -> A
+		RIGHT - D
+		
+		
