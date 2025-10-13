@@ -6,7 +6,10 @@ velocidade = 5 // Velocidade do PLAYER
 gravidade = .3 // Gravidade do PLAYER
 forca_pulo = -9; // Força de pulo do PLAYER
 quant_pulos = 2; // Quantidade de pulos do PLAYER
-stamina = 20; // Stamina do PLAYER
+
+stamina = 50; // Stamina do PLAYER
+hp = 10; // Pontos de Vida do Player
+mp = 20; // Pontos de Mana do Player
 
 function input_player(){
 	
@@ -56,7 +59,7 @@ function input_player(){
 		}
 		
 		if(_running && (stamina >= 1)){
-			velocidade = 20
+			velocidade = 10
 			if(velH != 0){
 			
 				stamina -= 1
@@ -66,13 +69,13 @@ function input_player(){
 		
 		}else{
 			
-			if (stamina < 20 && !_running){
+			if (stamina < 50 && !_running){
 			
 				stamina += 1;
 			
 			}
 			
-			if(stamina < 5){
+			if(stamina < 10){
 			
 				velocidade = 3;
 			
