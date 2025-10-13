@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Código_Movimentação",
+  "name":"Código_Movimentação",
+  "parent":{
+    "name":"Anotações",
+    "path":"folders/Anotações.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

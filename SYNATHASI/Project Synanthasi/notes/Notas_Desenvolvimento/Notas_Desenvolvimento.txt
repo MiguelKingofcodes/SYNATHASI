@@ -1,5 +1,17 @@
 DOCUMENTAÇÃO DO PROJETO POR MIGUEL CAMPOS
 
+***
+	Especificar ára Leitor:
+		> Sobre P.O.O. -> Programação Orienteda á objetos
+		> Desenvolvimento no GemMaker
+			> Rooms
+			> Objects
+			> Sprites
+			> Relação entre esses elementos
+			> Funções e Sintaxe Nativa Utilizadas
+
+
+
 ORGANIZAÇÃO DO DESENVOLVIMENTO DO JOGO:
 
 
@@ -14,12 +26,12 @@ ORGANIZAÇÃO DO DESENVOLVIMENTO DO JOGO:
 		> PLayer
 		> NPC's
 		> Objetos Interativos
-			> Podem levar para "Salas de Discução"
+			> Podem levar para "Modo de Discução"
 			> Transitar entre salas
 			
-( SALAS DE DISCUÇÃO )
+( MODO DE DISCUÇÃO )
 	Descrição:
-		> Salas de Discução entre personagens chaves da história do jogo
+		> GUI que irá mostrar o diálogo entre 2 ou mais personagens chaves da história do jogo
 		onde haverá aprofundamento da história e [ DIÁLOGOS MÚLTIPLA ESCOLHA ].
 
 	Possuem:
@@ -31,14 +43,42 @@ ORGANIZAÇÃO DO DESENVOLVIMENTO DO JOGO:
 =============***=============
 
 [ COLISÃO ]
+Método de Implementação:
+	> Criação de um Objeto "obj_Colision", o qual todos os outros objetos que eu quiser implementar
+	contendo uma colisão básica irão herdar as prorpiedades deste...
+	
+
+[ OBJ PLAYER DOCUMENTATION ]
+
+Atributos adicionado ao Player:
+	> velocidade
+	> stamina
+	> força_pulo
+	*** Herdados de obj_Colision
+		> velH
+		> velV
 
 
 [ MOVIMENTAÇÃO ]
 	
 	Teclas selecionadas para movimentação BÁSICA:
-		UP -> W
-		DOWN -> S
 		LEFT -> A
 		RIGHT - D
+		* Sendo um jogo de plataforma esses dois tipos de movimentação são o "Feijão com Arroz"
 		
+	Movimentação mais Avançada:
+		SPACE -> Pulo
+		SHIFT -> Correr
+
+
+[ TRANSIÇÃO DE "ROOMS" ]
+
+
+
+		
+[ HUD ]
+
+
+
+
 		
