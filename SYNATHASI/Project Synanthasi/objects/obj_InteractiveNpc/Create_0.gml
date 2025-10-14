@@ -1,0 +1,3 @@
+// Variável onde vou guardar a caixa de texto
+myTextBox = noone;
+text = []; // Sempre adicionar como vetor, mesmo quando é apenas algumas palavras...

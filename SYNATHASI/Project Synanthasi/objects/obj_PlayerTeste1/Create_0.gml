@@ -7,6 +7,7 @@ gravidade = .3 // Gravidade do PLAYER
 forca_pulo = -9; // Força de pulo do PLAYER
 quant_pulos = 2; // Quantidade de pulos do PLAYER
 
+// Atributos para Mecânicas
 stamina = 50; // Stamina do PLAYER
 hp = 10; // Pontos de Vida do Player
 mp = 20; // Pontos de Mana do Player
@@ -44,11 +45,8 @@ function input_player(){
 	
 	velH = (_right - _left)*velocidade; // O sentido da velocidade horizontal vai depender do sentido que o player clica
 	
-	var no_chao = place_meeting(x, y+1, obj_Bloco);
-	
-	
-	
-	
+	var no_chao = place_meeting(x, y+1, obj_Bloco);	
+		
 	// Implementando teste de Magia
 	
 	if(_up){
@@ -66,6 +64,10 @@ function input_player(){
 	}else if(_left){
 	
 		last_direction = "atras";
+	
+	}else{
+	
+		last_direction = "frente";
 	
 	}
 	
@@ -112,7 +114,7 @@ function input_player(){
 			
 			velH = -10
 		
-		}else if(){}
+		}
 		hp -= 2;
 	
 	}
@@ -172,6 +174,7 @@ function input_player(){
 	
 	}else{
 		
+		
 		// Se o player apertar "Pulo"
 		if (_jump && quant_pulos > 0){
 		
@@ -183,19 +186,27 @@ function input_player(){
 			
 		
 		}
-		
 		velV += gravidade;
-
-		
 	}
-	
-
-	
-	
 }
 
 	
 
+/*
+
+ 			if(last_direction == "frente"){
+				if(_running){
+				
+					velH = 7;
+				
+				}else{
+				
+					velH = 4;
+				
+				}
+			}
+
+*/
 	
 
 	

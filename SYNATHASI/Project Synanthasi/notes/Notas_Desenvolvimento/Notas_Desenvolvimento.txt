@@ -29,6 +29,11 @@ ORGANIZAÇÃO DO DESENVOLVIMENTO DO JOGO:
 			> Podem levar para "Modo de Discução"
 			> Transitar entre salas
 			
+	Modelo de Camadas:
+		[Instances]
+		[InteractiveInstances]
+		[EnemyInstances]
+			
 ( MODO DE DISCUÇÃO )
 	Descrição:
 		> GUI que irá mostrar o diálogo entre 2 ou mais personagens chaves da história do jogo

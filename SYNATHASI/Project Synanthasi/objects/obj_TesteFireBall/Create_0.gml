@@ -1,4 +1,4 @@
-_direction = "frente";
+
 
 velH = 0;
 velV = 0
