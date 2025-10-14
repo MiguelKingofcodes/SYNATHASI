@@ -11,6 +11,10 @@ stamina = 50; // Stamina do PLAYER
 hp = 10; // Pontos de Vida do Player
 mp = 20; // Pontos de Mana do Player
 
+// Atributos importantes porém não á mostra...
+last_direction = 0; // Última direção que o Player virou..
+
+
 function input_player(){
 	
 	/*
@@ -28,6 +32,8 @@ function input_player(){
 	
 	_left = keyboard_check(ord("A")); // Esquerda
 	_right = keyboard_check(ord("D")); // Direita
+	_up = keyboard_check(ord("W")); // Cima
+	_down = keyboard_check(ord("S")); // Baixo
 	
 	_running = keyboard_check(vk_shift); // Correndo
 	
@@ -39,7 +45,6 @@ function input_player(){
 	velH = (_right - _left)*velocidade; // O sentido da velocidade horizontal vai depender do sentido que o player clica
 	
 	var no_chao = place_meeting(x, y+1, obj_Bloco);
-	
 	
 	// Se o player está no chão
 	if (no_chao){
@@ -114,5 +119,45 @@ function input_player(){
 	
 	
 }
+
+	_fireball = keyboard_check_pressed(ord("K"));
+	// Implementando teste de Magia
+	
+	if(_up){
+	
+		last_direction = "cima";
+	
+	}else if(_down){
+	
+		last_direction = "baixo";
+	
+	}else if(_right){
+	
+		last_direction = "frente";
+	
+	}else if(_left){
+	
+		last_direction = "atras";
+	
+	}
+	
+	
+	if(_fireball && mp > 0 && (mp - 5) > 0){
+	
+		var fireBall = obj_TesteFireBall;
+		fireBall._direction = "cima";
+		instance_create_layer(x, y-2, "Instances", fireBall);
+		mp -= 5;
+		
+	}else{
+	
+		if(mp <= 20){
+
+			mp += 0.1;
+		
+		}
+	
+	}
+	
 
 

@@ -5,6 +5,26 @@ var _colX, _colY
 _colX = instance_place(x+velH, y, obj_Bloco);
 _colY = instance_place(x, y+velV, obj_Bloco);
 
+// Direcional
+if(_direction == "frente"){
+	
+	velH = 20;
+	
+}else if(_direction == "atras"){
+
+	velH = -20;
+
+}else if(_direction == "baixo"){
+
+	velV = 20;
+
+}else if(_direction == "cima"){
+
+	velV = -20;
+
+}
+
+
 // Horizontal
 if (_colX){ 
 	
@@ -25,6 +45,9 @@ if (_colX){
 	
 	velH = 0;
 	
+	sprite_index = spr_FireBallExplode;
+	
+	//instance_destroy(id, true);
 
 }
 
@@ -47,6 +70,7 @@ if (_colY){
 	}*/
 	
 	//velV = 0;
+	instance_destroy(id, true);
 
 
 }

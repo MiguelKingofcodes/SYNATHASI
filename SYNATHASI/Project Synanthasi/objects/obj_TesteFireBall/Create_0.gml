@@ -1,5 +1,8 @@
+
+_direction = "frente";
+
 velH = 0
-velV = 5
+velV = 0
 
 velocidade = 5
 gravidade = .3

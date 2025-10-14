@@ -54,6 +54,7 @@
     {"id":{"name":"TestRoom1","path":"rooms/TestRoom1/TestRoom1.yy",},},
     {"id":{"name":"TestRoom2","path":"rooms/TestRoom2/TestRoom2.yy",},},
     {"id":{"name":"spr_FireBall","path":"sprites/spr_FireBall/spr_FireBall.yy",},},
+    {"id":{"name":"spr_FireBallExplode","path":"sprites/spr_FireBallExplode/spr_FireBallExplode.yy",},},
     {"id":{"name":"spr_GroundTest64x64","path":"sprites/spr_GroundTest64x64/spr_GroundTest64x64.yy",},},
     {"id":{"name":"spr_HealthPoints","path":"sprites/spr_HealthPoints/spr_HealthPoints.yy",},},
     {"id":{"name":"spr_InterativeTransitionRoomTest64x64","path":"sprites/spr_InterativeTransitionRoomTest64x64/spr_InterativeTransitionRoomTest64x64.yy",},},

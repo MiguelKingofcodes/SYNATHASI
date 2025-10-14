@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_FireBall",
+  "%Name":"spr_FireBallExplode",
   "bboxMode":0,
-  "bbox_bottom":41,
-  "bbox_left":6,
-  "bbox_right":49,
-  "bbox_top":26,
+  "bbox_bottom":44,
+  "bbox_left":14,
+  "bbox_right":44,
+  "bbox_top":14,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"612c3976-656d-422f-a11c-66570e00b97b","blendMode":0,"displayName":"default","isLocked":false,"name":"612c3976-656d-422f-a11c-66570e00b97b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_FireBall",
+  "name":"spr_FireBallExplode",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_FireBall",
+    "%Name":"spr_FireBallExplode",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_FireBall",
+    "name":"spr_FireBallExplode",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8051c647-f031-40e6-bd86-3a44e41b70f2","path":"sprites/spr_FireBall/spr_FireBall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8051c647-f031-40e6-bd86-3a44e41b70f2","path":"sprites/spr_FireBallExplode/spr_FireBallExplode.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b55a7381-594b-4a44-9661-601486baa210","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

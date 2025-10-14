@@ -25,7 +25,7 @@ if(instance_exists(obj_PlayerTeste1)){
 	1, 
 	40, 
 	60, 
-	(obj_PlayerTeste1.mp*3), 
+	(obj_PlayerTeste1.mp*2), 
 	1, 
 	0, 
 	c_ltgray, 
