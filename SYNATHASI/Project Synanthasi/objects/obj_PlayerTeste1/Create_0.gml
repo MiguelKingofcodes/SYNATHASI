@@ -27,7 +27,7 @@ function input_player(){
 	
 	
 	// Criando variáveis para as movimentações
-	var _left, _right, _jump, _running
+	var _left, _right, _down, _up, _jump, _running
 	
 	
 	_left = keyboard_check(ord("A")); // Esquerda
@@ -45,6 +45,80 @@ function input_player(){
 	velH = (_right - _left)*velocidade; // O sentido da velocidade horizontal vai depender do sentido que o player clica
 	
 	var no_chao = place_meeting(x, y+1, obj_Bloco);
+	
+	
+	
+	
+	// Implementando teste de Magia
+	
+	if(_up){
+	
+		last_direction = "cima";
+	
+	}else if(_down){
+	
+		last_direction = "baixo";
+	
+	}else if(_right){
+	
+		last_direction = "frente";
+	
+	}else if(_left){
+	
+		last_direction = "atras";
+	
+	}
+	
+	
+	
+	var _fireball = keyboard_check_pressed(ord("K"));
+	if(_fireball && mp > 5 && (mp - 5) > 0){
+	
+		instance_create_layer(x, y-2, "Instances", obj_TesteFireBall);
+		mp -= 5;
+		
+	}else{
+	
+		if(mp <= 20){
+
+			mp += 0.05;
+		
+		}
+	
+	}
+	
+	var _fairyjump = keyboard_check_pressed(ord("L"));
+	if(_fairyjump && mp > 0 && (mp - 5) > 0){
+	
+		velV = -3;
+		mp -= 5;
+		
+	}else{
+	
+		if(mp <= 20){
+
+			mp += 0.05;
+		
+		}
+	
+	}
+	
+	// Testando Implementação de Inimigos e Knockback
+	var _enemy = instance_place(x+1, y+1, obj_EnemyTest);
+	if(_enemy){
+	
+
+		if(last_direction == "frente"){
+			
+			velH = -10
+		
+		}else if(){}
+		hp -= 2;
+	
+	}
+	
+	
+	
 	
 	// Se o player está no chão
 	if (no_chao){
@@ -120,44 +194,10 @@ function input_player(){
 	
 }
 
-	_fireball = keyboard_check_pressed(ord("K"));
-	// Implementando teste de Magia
 	
-	if(_up){
-	
-		last_direction = "cima";
-	
-	}else if(_down){
-	
-		last_direction = "baixo";
-	
-	}else if(_right){
-	
-		last_direction = "frente";
-	
-	}else if(_left){
-	
-		last_direction = "atras";
-	
-	}
-	
-	
-	if(_fireball && mp > 0 && (mp - 5) > 0){
-	
-		var fireBall = obj_TesteFireBall;
-		fireBall._direction = "cima";
-		instance_create_layer(x, y-2, "Instances", fireBall);
-		mp -= 5;
-		
-	}else{
-	
-		if(mp <= 20){
 
-			mp += 0.1;
-		
-		}
 	
-	}
+
 	
 
 
