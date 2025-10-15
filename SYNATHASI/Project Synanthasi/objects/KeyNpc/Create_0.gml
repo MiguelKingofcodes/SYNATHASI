@@ -1,0 +1,3 @@
+InitialText = "" // Texto Inicial que o Personagem Irá Falar
+choices = [] // Escolhas que o player poderá fazer...
+

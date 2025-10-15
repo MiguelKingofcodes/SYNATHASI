@@ -84,6 +84,16 @@ Atributos adicionado ao Player:
 [ HUD ]
 
 
+[ DIÁLOGOS MÚLTIPLAS ESCOLHA ]
 
+Atributos:
+	> Diálogo Inicial
+	> Escolha -> Diálogo Específico
+	> 
+
+
+* Impedir que outras coisas aconteçam...
+* Criar Objeto ou Sprite no tamanho da tela inteira
+* 
 
 		
