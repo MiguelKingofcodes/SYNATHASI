@@ -1,0 +1,2 @@
+buttonText = "Recomeçar..."
+typeButton = "Again"

@@ -13,8 +13,8 @@ hp = 10; // Pontos de Vida do Player
 mp = 20; // Pontos de Mana do Player
 
 // Atributos importantes porém não á mostra...
-last_direction = 0; // Última direção que o Player virou..
-
+last_direction = ""; // Última direção que o Player virou..
+died = false;
 
 function input_player(){
 	
@@ -106,18 +106,33 @@ function input_player(){
 	}
 	
 	// Testando Implementação de Inimigos e Knockback
-	var _enemy = instance_place(x+1, y+1, obj_EnemyTest);
-	if(_enemy){
-	
-
-		if(last_direction == "frente"){
+	var _enemyFront = instance_place(x+1, y, obj_EnemyTest);
+	var _enemyBack = instance_place(x-1, y, obj_EnemyTest);
+	if(_enemyFront){
+		
+		velH += -30
+		hp -= 2;
+		if((hp-2) == 0){
+			died = true;
+			room_goto(GameOver);
 			
-			velH = -10
+		}
+		
+		
+	}else if (_enemyBack){
+		
+		if((hp-2) == 0){
+			died = true;
+			room_goto(GameOver);
 		
 		}
+		
+		velH += 30
 		hp -= 2;
-	
+		
 	}
+		
+	
 	
 	
 	
