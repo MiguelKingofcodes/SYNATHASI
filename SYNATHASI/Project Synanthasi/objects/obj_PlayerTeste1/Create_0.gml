@@ -48,28 +48,35 @@ function input_player(){
 	var no_chao = place_meeting(x, y+1, obj_Bloco);	
 		
 	// Implementando teste de Magia
+	var _Left, _Right, _Up, _Down
 	
-	if(_up){
+	_Left = keyboard_check_pressed(ord("A")); // Esquerda
+	_Right = keyboard_check_pressed(ord("D")); // Direita
+	_Up = keyboard_check_pressed(ord("W")); // Cima
+	_Down = keyboard_check_pressed(ord("S")); // Baixo
+	
+	
+	if(_Up){
 	
 		last_direction = "cima";
 	
-	}else if(_down){
+	}else if(_Down){
 	
 		last_direction = "baixo";
 	
-	}else if(_right){
+	}else if(_Right){
 	
 		last_direction = "frente";
 	
-	}else if(_left){
+	}else if(_Left){
 	
 		last_direction = "atras";
 	
-	}else{
+	}/*else{
 	
 		last_direction = "frente";
 	
-	}
+	}*/
 	
 	
 	
@@ -104,6 +111,27 @@ function input_player(){
 		}
 	
 	}
+	
+	/*
+	CODAR SLASH
+	var _slash = keyboard_check_pressed(ord("J"));
+	var _enemyFront = instance_place(x+5, y, obj_PlayerTeste1);
+	if(_slash && stamina > 0 && (stamina - 5) > 0){
+	
+		
+		
+		stamina -= 5;
+		
+	}else{
+	
+		if (stamina < 50 && !_slash){
+			
+			stamina += 1;
+			
+		}
+	
+	}
+	*/
 	
 	// Testando Implementação de Inimigos e Knockback
 	var _enemyFront = instance_place(x+1, y, obj_EnemyTest);

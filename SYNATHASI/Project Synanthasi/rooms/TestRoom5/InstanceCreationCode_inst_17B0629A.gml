@@ -1,0 +1,1 @@
+text = ["SR.ESPECIARIAS: Olá pequena, é claro que eu posso te dar alguns pães, mas com uma condição: ", "SR.ESPECIARIAS: Pegue-me alguns Morangos na Floresta profunda..."]

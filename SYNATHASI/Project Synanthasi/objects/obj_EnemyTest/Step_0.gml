@@ -1,15 +1,78 @@
 // Inherit the parent event
 event_inherited();
-velV += .5;
-if(obj_PlayerTeste1.x > x){
 
-	velH = 2;
+// Inimigos não irão entrar dentro um do outro
+var _enemyFront = instance_place(x+1, y, obj_EnemyTest);
+var _enemyBack = instance_place(x-1, y, obj_EnemyTest);
+var _enemyDown = instance_place(x, y+1, obj_EnemyTest);
+var _enemyUp = instance_place(x, y-1, obj_EnemyTest);
 
-}else{
+if(enemyType == "Ground"){
 
-	velH = -2;
+	velV += .5 // Gravidade para inimigos de cão
+	if(obj_PlayerTeste1.x > x){
+
+		velH = 2;
+
+	}else{
+
+		velH = -2;
+		
+	}
+	
+	
+}else if(enemyType == "Flying"){
+	
+	if(obj_PlayerTeste1.x > x){
+
+		velH = 2;
+
+	}else{
+
+		velH = -2;
+		
+	}
+	
+	
+	if(obj_PlayerTeste1.y > y){
+
+		velV = 2;
+
+	}else{
+
+		velV = -2;
+		
+	}
+
+
+}else if(enemyType == "Shooter"){
+
 
 }
+
+
+	
+	
+	/*if(_enemyFront){
+		
+		velH = 0
+		
+	}else if (_enemyBack){
+		
+		velH = 1
+		
+	}
+	
+	if(_enemyUp){
+		
+		velV = 0
+		
+	}else if (_enemyDown){
+		
+		velV = 0
+		
+	}*/
+
 
 // Codando morte do inimigo
 // Código para controlar a colisão
